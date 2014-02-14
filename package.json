@@ -3,12 +3,14 @@
   "version": "1.1.1",
   "description": "A translation module for AngularJS",
   "main": "index.js",
+  "browser": "./dist/angular-translate.js",
   "repository": {
     "type": "git",
     "url": "http://github.com/PascalPrecht/angular-translate"
   },
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start karma.unit.conf.js --browsers Firefox --single-run"
+    "test": "./node_modules/karma/bin/karma start karma.unit.conf.js --browsers Firefox --single-run",
+    "prepublish": "grunt build"
   },
   "author": {
     "name": "Pascal Precht"
